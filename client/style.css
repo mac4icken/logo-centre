@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Donegal+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@700&display=swap');
+@font-face {
+    font-family: 'Epilogue Light';
+    src: url(./fonts/Epilogue-Light.ttf);
+}
+@font-face {
+    font-family: 'Girloy Semibold';
+    src: url(./fonts/gilroy-semibold.ttf);
+}
+@font-face {
+    font-family: 'Girloy Medium';
+    src: url(./fonts/gilroy-medium.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF1E8;
+}
+.top-menu li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 65px;
+    font-family: 'Girloy Semibold';
+    color: #fff;
+    cursor: pointer;
+}
+.top-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+.top-menu ul {
+    margin-right: 190px;
+}
+.top-menu {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: -1px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+}  
+.top-menu img {
+    height: 65px;
+    margin-left: 190px;
+} 
+.tittle-menu h3 {
+    font-size: 50px;
+    font-family: 'Montserrat Alternates';
+    margin-left: 190px;
+    margin-top: 230px;
+}
+.tittle-menu p { 
+    font-size: 21px;
+    font-family: 'Donegal One';
+    margin-left: 190px;
+    width: 500px;
+}
+.tittle-menu a {
+    font-family: 'Girloy Semibold';
+    font-size: 17px;
+    margin-left: 190px;
+    background-color: #CAEF46;
+    border: none;
+    outline: none;
+    padding: 17px 37px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #000;
+} 
+.tittle-menu a:hover {
+    background-color: #c8ff00;
+} 
+.tittle-menu span { 
+    font-family: 'Girloy Medium';
+    opacity: 50%;
+}
+.tittle-menu img { 
+    margin-bottom: -2px;
+    margin-left: 30px;
+}
+.character {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -348px;
+}
+.character-char {
+    position: absolute;
+    right: 240px;
+}
+.block-about-us {
+    margin-top: 48px;
+}
+.text-about p { 
+    color: #fff;
+}
+.text-about { 
+    background-color: #CAEF46;
+    padding: 18px 35px;
+    border-radius: 5px;
+    position: absolute;
+    left: 509px;
+    top: 1200px;
+    width: 174px;
+    font-family: 'Inter';
+}
+.about-img {
+    display: flex;
+    margin-left: 190px;
+    padding-top: 59px;
+    padding-bottom: 59px;
+}
+.about-img img {
+    height: 500px;
+    border-radius: 21px;
+}
+.about-text {
+    margin-left: 130px;
+}
+.about-text h2 {
+    font-family: 'Girloy Semibold';
+    color: #333333;
+    opacity: 50%;
+    letter-spacing: 3px;
+}
+.about-text h3 {
+    font-family: 'Girloy Semibold';
+    font-weight: bold;
+    color: #333333;
+    font-size: 50px;
+    width: 85%;
+    margin-top: 20px;
+}
+.about-text h4 {
+    font-family: 'Donegal One';
+    font-weight: 100;
+    color: #333333;
+    font-size: 17px;
+    width: 50%;
+    margin-top: -20px;
+}
+.about-text a {
+    font-family: 'Girloy Semibold';
+    font-weight: 100;
+    color: #333333;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+
+    
+
+/* .contact-us {
+    background-color: #CAEF46;
+}
+#map {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 190px;
+    margin-top: -70px;
+    width: 598px;
+    height: 398px;
+}
+.contacts {
+    position: relative;
+} */
+
+.contact-us {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Блок контактов слева */
+  .contacts {
+    margin-top: 190px;
+    margin-left: 190px;
+  }
+  
+  /* Стили для контактов */
+  .contacts a {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    color: #111111;
+    opacity: 50%; 
+    font-family: 'Girloy Semibold';
+    font-size: 20px;
+  }
+  .contacts h2 { 
+    font-family: 'Girloy Semibold';
+    color: #333333;
+    opacity: 50%;
+    letter-spacing: 3px;
+  }
+  
+  .contacts img {
+    margin-right: 10px;
+  }
+  
+  /* Стили для карты справа */
+  #map {
+    height: 499px;
+    width: 689px;
+    background-color: #333333;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .review { 
+    border: solid 1px #000;
+    width: 350px;
+    padding: 20px 25px 0;
+    margin-left: 15px;
+    font-family: 'Donegal One';
+    margin-bottom: 50px;
+  }
+  .review h3 { 
+    font-family: 'Girloy Semibold';
+  }
+  .review h4 { 
+    font-family: 'Girloy Semibold';
+    opacity: 50%;
+  }
+  .reviews { 
+    margin-top: -20px;
+    display: flex;
+    padding-top: 137px;
+    justify-content: center;
+  }
+  .reviews-block {
+    margin-top: -20px;
+  }
+  .reviews-block h2 {
+    position: relative;
+    top: 70px;
+    display: inline;
+    left: 190px;
+    font-family: 'Girloy Semibold';
+    color: #333333;
+    opacity: 50%;
+    letter-spacing: 3px;
+  }
+  .reviews h2 { 
+    padding-top: 70px;
+    padding-left: 190px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .form input {
+    width: 590px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Girloy Medium';
+    padding: 14px 28px 14px;
+  }
+  .form p {
+    text-align: center;
+    font-family: 'Girloy Semibold';
+    color: #333333;
+    opacity: 50%;
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
+  .form button {
+    border: none;
+    background-color: #CAEF46;
+    font-family: 'Girloy Medium';  
+    padding: 14px 238px 14px;
+    font-size: 16px;
+}
+#notify {
+    text-align: center;
+    font-family: 'Girloy Semibold';
+    color: #333333;
+    opacity: 70%;
+    font-size: 15px;
+    display: none;
+  }
+footer {
+    margin-top: 70px;
+    background-color: #000; 
+}
+footer img{
+    height: 70px;
+    margin-top: 45px;
+    margin-left: 190px;
+}
+footer h3 {
+    margin-bottom: 0;
+    margin-left: 170px;
+    margin-top: 194px;
+    color: #fff;
+    padding-bottom: 23px;
+}
+.block-menu {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -935px;
+    margin-top: -89px;
+    list-style: none;
+    font-family: 'Girloy Semibold';
+}
+.block-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.block-menu h1{
+    font-family: 'Girloy Semibold';
+    color: rgba(255, 255, 255, 0.50);
+    letter-spacing: 3px;
+}
+footer h3 {
+    font-family: 'Girloy Semibold';
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 16px;
+}
+.description p {
+    margin-top: 140px;
+    margin-left: 190px;
+    font-size: 19px;
+    font-family: 'Girloy Semibold';
+}
+.tittle-menu {
+    margin-top: 1px;
+}
+.block-top div {
+    background-color: #fff;
+    width: 65px;
+    color: #fff;
+    height: 10px;
+    margin-top: 7px;
+    border-radius: 35px;
+}
+.block-top {
+    margin-right: 1px;
+}
+@media (max-width: 1170px) {
+    .about-text {
+        margin-left: -496px;
+        margin-top: -50px;
+    }
+    .about-img img {
+        height: 500px;
+        border-radius: 21px;
+        margin-top: 335px;
+    }
+    .about-text h4 {
+        font-family: 'Donegal One';
+        font-weight: 100;
+        color: #333333;
+        font-size: 17px;
+        margin-top: -20px;
+        width: 100%;
+    }
+    .about-text a {
+        margin-top: -20px;
+    }
+}
+@media (max-width: 1500px) {
+    .character {  
+        display: none;
+    }
+}
+@media (max-width: 980px) {
+    .top-menu ul {
+        display: none;
+    }
+    .block-about-us {
+        margin-left: -176px;
+    }
+    .tittle-menu {
+        margin-top: -183px;
+        margin-left: -159px;
+    }
+    .tittle-menu a {
+        letter-spacing: 3px;
+        width: 150px;
+    }
+    .contacts {
+        margin-top: -65px;
+        margin-left: 7px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-us {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px;
+        flex-direction: column;
+    }
+}
+@media (max-width: 900px) {
+    .reviews {
+        margin-top: -20px;
+        display: flex;
+        padding-top: 120px;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 355px;
+        padding-right: 97px;
+    }
+}

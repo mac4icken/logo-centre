@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логопедический центр "Пазл"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="top-menu">   
+            <ul>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="#contact-us">Контакты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li>Цены</li>
+            </ul>
+            <div class="block-top">
+                <div id="one"> </div>
+                <div id="two"> </div>
+                <div id="three"> </div>
+            </div>
+            <a href="/"><img src="./img/logo.svg"></a>
+        </div>
+        <div class="phone-menu">
+            <li><a href="/about">О нас</a></li>
+            <li><a href="#contact-us">Контакты</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li>Цены</li>
+        </div>
+        <div class="tittle-menu">
+            <h3>Пазл - <font color="#CAEF46">логопедический</font> центр</h3>
+            <p>С нами все сложится! Приходите к нам и будьте уверены в счастливом будущем вашего ребёнка!</p>
+            <a href="#form">Записаться</a>
+            <img src="./img/call.svg">
+            <span>280-11-78</span> 
+        </div>
+        <div class="character">
+            <img class="character-char" src="./img/character.svg" alt="">
+            <img src="./img/character-background.svg" alt="">
+        </div>
+        <div class="block-about-us"> 
+            <div class="about-img"> 
+                <img src="./img/photo-007.png">
+                <!-- <div class="text-about">
+                    <p><span style="font-size: 40px;">≈ 1000</span></p>
+                    <p><span style="font-size: 20px; display: block; width: 200px;">Детей, получивших помощь</span></p>
+                </div> -->
+                <div class="about-text">
+                    <h2>О НАС</h2>
+                    <h3>Сильнейшие специалисты</h3>
+                    <h4>Осуществялем помощь вашим детям, с речевыми, поведенческими и коммуникативными нарушениями. Высокая результативность занятий, авторские методики, работа со сложными нарушениями.</h4>
+                    <a href="/about">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us" id="contact-us">
+            <div class="contacts">
+                <h2>КОНТАКТЫ</h2>
+                <a><img src="./img/call.svg" alt="">280-11-78</a>
+                <a><img src="./img/map.svg" alt="">г. Красноярск ул. 78-й Добровольческой Бригады, 11</a>
+                <a><img src="./img/mail.svg" alt="">example.example@email.com</a>
+            </div>
+            <div id="map"></div>
+        </div>
+        <div class="reviews-block" id="reviews">
+            <h2>ОТЗЫВЫ</h2>
+            <div class="reviews">
+                <div class="review"> 
+                    <img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt="">  
+                    <p>“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change & it is a good channel for us.”</p> 
+                    <img src="./img/user.svg" alt="">
+                    <h3>Иван Иванов</h3>
+                    <h4>Родитель</h4>
+                </div>
+                <div class="review"> 
+                    <img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt="">  
+                    <p>“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change & it is a good channel for us.”</p> 
+                    <img src="./img/user.svg" alt="">
+                    <h3>Иван Иванов</h3>
+                    <h4>Родитель</h4>
+                </div>
+                <div class="review"> 
+                    <img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt=""><img src="./img/star.svg" alt="">  
+                    <p>“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change & it is a good channel for us.”</p> 
+                    <img src="./img/user.svg" alt="">
+                    <h3>Иван Иванов</h3>
+                    <h4>Родитель</h4>
+                </div>
+            </div>
+        </div> 
+        <div class="form" id="form">
+            <p>ОСТАВИТЬ ЗАЯВКУ</p>
+            <input id="name" type="text" placeholder="Имя"><br>
+            <input id="surname" type="text" placeholder="Фамилия"><br>
+            <input id="phone" type="text" placeholder="Номер телефона"><br>
+            <input id="email" type="text" placeholder="E-Mail"><br>
+            <button onclick="sendForm()" >Записаться</button>
+            <h3 id="notify" >Вы успешно отправили заявку, с вами свяжуться в ближайшее время</h3>
+        </div>
+    </div>
+    <footer>
+        <img src="./img/logo.svg">
+        <div class="block-menu">
+            <h1>МЕНЮ</h1>
+            <li><a href="/about">О нас</a></li>
+            <li><a href="/#contact-us">Контакты</a></li>
+            <li><a href="/#reviews">Отзывы</a></li>
+            <li>Цены</li>
+        </div>
+        <h3>© 2023. Все права защищены.</h3><br>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=77de3d73-b577-472f-8e3a-4a87484bad0c&lang=ru_RU" type="text/javascript"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
