@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const app = express();
 const mysql = require('mysql') 
-const PORT = 3000
+const PORT = 80
 let DB = false
 DB = mysql.createConnection({
     host: 'localhost',     
