@@ -4,7 +4,7 @@ const https = require('https');
 const fs = require('fs');
 const mysql = require('mysql');
 const app = express();
-const PORT = 443;
+const PORT = 8443;
 const sslOptions = {
   key: fs.readFileSync('/etc/letsencrypt/live/logopazl.ru/privkey.pem'),
   cert: fs.readFileSync('/etc/letsencrypt/live/logopazl.ru/fullchain.pem')
