@@ -77,6 +77,7 @@ body {
     transition: 0.3s;
     text-decoration: none;
     color: #000;
+    letter-spacing: 3px;
 } 
 .tittle-menu a:hover {
     background-color: #c8ff00;
@@ -114,18 +115,25 @@ body {
     width: 174px;
     font-family: 'Inter';
 }
-.about-img {
+/* .about-img {
     display: flex;
-    margin-left: 190px;
-    padding-top: 59px;
-    padding-bottom: 59px;
+    margin-left: -550px;
+    margin-top: -338px;
+    flex-direction: row;
+} */
+.about-container {
+    display: flex;
+    margin-left: 42px;
 }
 .about-img img {
     height: 500px;
     border-radius: 21px;
 }
 .about-text {
-    margin-left: 130px;
+    margin-left: 93px;
+    display: flex;
+    margin-top: 65px;
+    flex-direction: column
 }
 .about-text h2 {
     font-family: 'Girloy Semibold';
@@ -155,7 +163,6 @@ body {
     color: #333333;
     font-size: 17px;
     cursor: pointer;
-    background-color: #fff;
     border: none;
     outline: none;
     text-decoration: none;
@@ -287,7 +294,7 @@ body {
     border: none;
     background-color: #CAEF46;
     font-family: 'Girloy Medium';  
-    padding: 14px 238px 14px;
+    padding: 14px 90px 14px;
     font-size: 16px;
 }
 #notify {
@@ -320,8 +327,7 @@ footer h3 {
     flex-direction: column;
     align-content: space-around;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-left: -935px;
+    /* margin-left: 442px; */
     margin-top: -89px;
     list-style: none;
     font-family: 'Girloy Semibold';
@@ -359,9 +365,10 @@ footer h3 {
 }
 .block-top {
     margin-right: 1px;
+    display: none;
 }
 @media (max-width: 1170px) {
-    .about-text {
+    /* .about-text {
         margin-left: -496px;
         margin-top: -50px;
     }
@@ -380,7 +387,7 @@ footer h3 {
     }
     .about-text a {
         margin-top: -20px;
-    }
+    } */
 }
 @media (max-width: 1500px) {
     .character {  
@@ -391,9 +398,9 @@ footer h3 {
     .top-menu ul {
         display: none;
     }
-    .block-about-us {
+    /* .block-about-us {
         margin-left: -176px;
-    }
+    } */
     .tittle-menu {
         margin-top: -183px;
         margin-left: -159px;
@@ -403,18 +410,39 @@ footer h3 {
         width: 150px;
     }
     .contacts {
-        margin-top: -65px;
+        margin-top: 205px;
         margin-left: 7px;
+    }
+    .block-top { 
+        display: initial;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .contact-us {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         padding: 20px;
         flex-direction: column;
+    }
+    .tittle-menu h3 {
+        font-size: 30px;
+    }
+    .about-container {
+        display: flex;
+        margin-left: 42px;
+        flex-direction: column;
+    }
+    .about-text {
+        margin-left: 3px;
+    }
+    .about-text h4{
+        width: 500px;
+    }
+    #map {
+        margin-left: 1px;
+        width: 100%;
     }
 }
 @media (max-width: 900px) {
@@ -427,5 +455,88 @@ footer h3 {
         align-items: center;
         margin-left: 355px;
         padding-right: 97px;
+    }
+}
+@media (max-width: 850px) {
+    .reviews {
+        margin-top: -20px;
+        display: flex;
+        padding-top: 120px;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 66px;
+        padding-right: 97px;
+    }
+}
+@media (max-width: 700px) { 
+    .about-img img {
+        height: 435px;
+        border-radius: 21px;
+    }
+    .about-text h3 {
+        font-size: 37px;
+    }
+    .about-text h4 {
+        width: 50%;
+    }
+    .form input {
+        width: 70%;
+    }
+    .form button {
+        width: 79%;
+    }
+}
+@media (max-width: 550px) { 
+
+    .tittle-menu p {
+        width: 50%;
+    }
+    footer h3 {
+        margin-left: 52px;
+    }
+    .about-img img {
+        height: 390px;
+        border-radius: 21px;
+    }
+    .form input {
+        font-size: 13px;
+    }
+}
+@media (max-width: 450px) { 
+    .about-img img {
+        height: 300px;
+        border-radius: 21px;
+    }
+}
+@media (max-width: 360px) { 
+    /* #map {
+        margin-left: 1px;
+        width: 120%;
+    } */
+    .about-img img {
+        height: 270px;
+        border-radius: 21px;
+    }
+    .about-text h3 {
+        font-size: 30px;
+    }
+    .top-menu img {
+        margin-left: 63px;
+    }
+
+}
+
+@media (max-width: 420px) { 
+    .review {
+        border: solid 1px #000;
+        width: 136%;
+        padding: 20px 25px 0;
+        margin-left: 43px;
+        font-family: 'Donegal One';
+        margin-bottom: 50px;
+    }
+    .contacts a {
+        font-size: 13px;
     }
 }
