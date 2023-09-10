@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,21 @@
 </head>
 <body>
     <div class="block-login">
-        <input class="password" type="text" placeholder="Пароль"><br>
-        <button onclick="loginAdmin()">Войти</button><br>
         <div class="error"></div>
+        <table id="ordersTable" class="ordersTable">
+            <thead>
+              <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Телефон</th>
+                <th>Email</th>
+                <th>Действие</th> <!-- Добавлен столбец для кнопок -->
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Здесь будут добавляться строки с данными -->
+            </tbody>
+          </table>          
     </div>
     <script src="./admin.js"></script>
 </body>
