@@ -37,7 +37,7 @@ app.get('/about', (req, res) => {
   res.sendFile(`${__dirname}/client/about.html`);
 });
 
-app.get('/admin', (req, res) => {
+app.get('/21232f297a57a5a743894a0e4a801fc3', (req, res) => {
   res.sendFile(`${__dirname}/client/admin.html`);
 });
 
