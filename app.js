@@ -64,7 +64,37 @@ const server = https.createServer(sslOptions, app);
 server.listen(PORT, () => {
   console.log(`[SERVER] Сервер успешно запущен и слушает порт ${PORT}!`);
 });
+app.get('/getOrders', (req, res) => {
+  DB.query('SELECT * FROM orders', (err, results) => {
+    if (err) {
+      console.error('Ошибка выполнения SQL-запроса:', err);
+      res.status(500).json({ error: 'Произошла ошибка при получении данных.' });
+    } else {
+      const data = results.map(row => ({
+        id: row.id,
+        name: row.name,
+        surname: row.surname,
+        phone: row.phone,
+        email: row.email,
+        status: row.status
+      }));
 
+      res.json(data);
+    }
+  });
+});
+app.post('/updateStatus', (req, res) => {
+  const orderId = req.body.orderId;
+  
+  DB.query('UPDATE orders SET status = ? WHERE id = ?', ['Рассмотренно', orderId], (err, result) => {
+    if (err) {
+      console.error('Ошибка при обновлении status:', err);
+      res.status(500).json({ error: 'Произошла ошибка при обновлении status.' });
+    } else {
+      res.json({ success: true });
+    }
+  });
+});
 
 
 
