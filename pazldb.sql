@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 10 2023 г., 09:59
+-- Время создания: Сен 10 2023 г., 10:18
 -- Версия сервера: 10.4.27-MariaDB
 -- Версия PHP: 8.2.0
 
@@ -33,7 +33,7 @@ CREATE TABLE `orders` (
   `surname` varchar(128) NOT NULL,
   `phone` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
-  `status` varchar(128) NOT NULL
+  `status` varchar(128) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -41,7 +41,9 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `name`, `surname`, `phone`, `email`, `status`) VALUES
-(1, 'test', 'test', 'test', 'test', 'Рассмотренно');
+(1, 'test', 'test', 'test', 'test', 'Рассмотренно'),
+(2, '', 'test', 'test', 'test', ''),
+(3, 'test', 'test', 'test', 'test', '');
 
 --
 -- Индексы сохранённых таблиц
@@ -61,7 +63,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT для таблицы `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(128) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(128) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
